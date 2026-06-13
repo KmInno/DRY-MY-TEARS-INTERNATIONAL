@@ -3,15 +3,10 @@ import image from './/Potifolio.jpg';
 import './Home.css'; 
 function Home() {
   return (
-    <div className='home'>
+
       <div className="home-header">
-        <h1>Hello , I am JENGO ARNOLD</h1>
- <div className='home-image-container'>
-      <img src={image} alt="Profile" className='home-image'/>
-      </div>
       <div className='home-content'>
-      
-  
+   <h1>Hello , I am JENGO ARNOLD</h1>
           <h2 className="Engineer-title">
             Network Engineer
             <span className="Web-Developer">
@@ -33,6 +28,11 @@ function Home() {
             <button className="Button">
               Contact Me
             </button>
+ <button className="Cv">
+              Download CV
+            </button>
+
+
           </div>
 
           {/* Stats */}
@@ -53,10 +53,10 @@ function Home() {
             </div>
           </div>
         </div>
-
+<img src={image} alt="Profile-image" className='imageG'/>
       </div>
      
-</div>
+
 
 
 
