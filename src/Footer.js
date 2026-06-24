@@ -6,9 +6,9 @@ const Footer = () => {
       <div className="mx-auto max-w-7xl space-y-10 px-6 py-14 md:px-8">
         <div className="grid gap-8 md:grid-cols-4">
           <div className="space-y-5 md:col-span-2">
-            <div className="text-2xl font-bold tracking-tight text-white">JENGOARNOLD</div>
+            <div className="text-2xl font-bold tracking-tight text-white">DRY-MY-TEARS-INTERNATIONAL</div>
             <p className="max-w-md text-sm leading-7 text-slate-400">
-               Tech professional passionate about Networking and CyberSecurity with intense knowledge in Javascript, HTML, CSS, React.
+               Every Child deserves a smile.Every tear deserves a reason to dry. Our Children .Our Future.
             </p>
             <div className="flex flex-wrap items-center gap-3">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-slate-200 transition hover:bg-white/20">
@@ -70,22 +70,22 @@ const Footer = () => {
             <ul className="space-y-3 text-sm text-slate-400">
               <li>
                 <a href="#" className="transition hover:text-white">
-                  Computer Networking
+                  Education
                 </a>
               </li>
               <li>
                 <a href="#" className="transition hover:text-white">
-                  Cyber-Security
+                Child-Welfare
                 </a>
               </li>
               <li>
                 <a href="#" className="transition hover:text-white">
-                  Web-Development
+                  Health-care
                 </a>
               </li>
               <li>
                 <a href="#" className="transition hover:text-white">
-                  Graphics-design
+                  Community-Development
                 </a>
               </li>
             </ul>
@@ -94,15 +94,15 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-sm font-semibold uppercase tracking-[0.2em] text-white">Contact Us</h4>
             <ul className="space-y-3 text-sm text-slate-400">
-              <li>📍 Kampala, Uganda</li>
-              <li>📞 +256 740969070</li>
-              <li>✉️ arnoldjaz5@gmail.com</li>
+              <li>📍 Asian Community,Monrovia-Liberia</li>
+              <li>📞 +231-555-743-687</li>
+              <li>✉️ drymytearsinternational2@gmail.com</li>
             </ul>
           </div>
         </div>
 
         <div className="flex flex-col items-center justify-between gap-3 border-t border-slate-800 pt-6 text-sm text-slate-500 sm:flex-row">
-          <p>© {currentYear} Jengo. All rights reserved.</p>
+          <p>© {currentYear} drymytearsinternational2@gmail.com. All rights reserved.</p>
           <div className="flex flex-wrap items-center gap-3">
             <a href="#" className="transition hover:text-white">
               Privacy Policy
