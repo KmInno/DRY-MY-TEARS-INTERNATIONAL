@@ -3,7 +3,7 @@ import image from './/Potifolio.jpg';
 import './Home.css'; 
 function Home() {
   return (
-
+<div className='learn-more' >
       <div className="home-header">
       <div className='home-content'>
    <h1>Hello , I am JENGO ARNOLD</h1>
@@ -55,7 +55,7 @@ function Home() {
         </div>
 <img src={image} alt="Profile-image" className='imageG'/>
       </div>
-     
+     </div>
 
 
 

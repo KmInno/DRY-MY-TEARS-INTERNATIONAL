@@ -6,23 +6,35 @@ import './Productcard.css';
 import Productcard from './Productcard';
 import Home from './Home';
 import './Home.css';
-
+import Footer from './Footer';
+import './Footer.css';
+import {BrowserRouter as Router,Route,Routes}from 'react-router-dom';
 function App() {
   return (
 
+
+
     <div nav="App">
-     <Header/>
+  <Router> 
+                <Routes>
+                   <Route path="/*" element={
+                    <>
+                      <Header/> 
+                      <Routes>
+                           <Route path='/' element={<Home/>}/>
+                           <Route path='/services' element={<services/>}/>
+                           <Route path='/about' element={<aboutUs/>}/>
+                            <Route path='/login' element={<login/>}/>
+                            <Route path='/signup' element={<signup/>}/>
+                      </Routes>
+                    </>
+                   } />  
+                </Routes>
+            </Router>
      <div className='home-container'>
-      <Home/>
-     </div>
-     <h3 className='product-heading'>Projects</h3>
-     <div className='product-container'>
     
-      <Productcard/>
-      <Productcard/>
-      <Productcard/>
-      <Productcard/>
-      </div>
+     </div>
+      <Footer/>
     </div>
   );
 }

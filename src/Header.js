@@ -9,17 +9,16 @@ function Header() {
         <img src={logo} alt="Jengo Arnold Logo" className="logo" />
       </div>
 
-      <nav className="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#services">Services</a>
+      <nav className="nav-menu">
+       <ul className="nav-links">
+ <li><a href="./">Home</a></li>
+ <li><a href="./about">About</a></li>
+ <li><a href="./projects">Projects</a></li>
+ <li><a href="./services">Services</a></li>
+<li><a href="./login"className="login-btn" >login</a></li>
+<li><a href="./signup" className="signup-btn" >SignUp</a></li>
+       </ul>
       </nav>
-
-      <div className="header-buttons">
-        <button className="login-btn">Login</button>
-        <button className="signup-btn">Sign Up</button>
-      </div>
     </header>
   );
 }
