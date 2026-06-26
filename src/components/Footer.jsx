@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -8,7 +10,7 @@ const Footer = () => {
           <div className="space-y-5 md:col-span-2">
             <div className="text-2xl font-bold tracking-tight text-white">DRY-MY-TEARS-INTERNATIONAL</div>
             <p className="max-w-md text-sm leading-7 text-slate-400">
-               Every Child deserves a smile.Every tear deserves a reason to dry. Our Children .Our Future.
+              Every child deserves a smile, and every tear deserves a reason to dry.
             </p>
             <div className="flex flex-wrap items-center gap-3">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-slate-200 transition hover:bg-white/20">
@@ -38,28 +40,18 @@ const Footer = () => {
             <h4 className="text-sm font-semibold uppercase tracking-[0.2em] text-white">Quick Links</h4>
             <ul className="space-y-3 text-sm text-slate-400">
               <li>
-                <a href="/" className="transition hover:text-white">
+                <Link to="/" className="transition hover:text-white">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/about" className="transition hover:text-white">
+                <Link to="/about" className="transition hover:text-white">
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/services" className="transition hover:text-white">
-                  Services
-                </a>
-              </li>
-              <li>
-                <a href="/login" className="transition hover:text-white">
-                  Login
-                </a>
-              </li>
-              <li>
-                <a href="/signup" className="transition hover:text-white">
-                  Signup
+                <a href="mailto:drymytearsinternational2@gmail.com" className="transition hover:text-white">
+                  Contact
                 </a>
               </li>
             </ul>
@@ -68,33 +60,17 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-sm font-semibold uppercase tracking-[0.2em] text-white">Services</h4>
             <ul className="space-y-3 text-sm text-slate-400">
-              <li>
-                <a href="#" className="transition hover:text-white">
-                  Education
-                </a>
-              </li>
-              <li>
-                <a href="#" className="transition hover:text-white">
-                Child-Welfare
-                </a>
-              </li>
-              <li>
-                <a href="#" className="transition hover:text-white">
-                  Health-care
-                </a>
-              </li>
-              <li>
-                <a href="#" className="transition hover:text-white">
-                  Community-Development
-                </a>
-              </li>
+              <li>Education</li>
+              <li>Child Welfare</li>
+              <li>Health Care</li>
+              <li>Community Development</li>
             </ul>
           </div>
 
           <div className="space-y-4">
             <h4 className="text-sm font-semibold uppercase tracking-[0.2em] text-white">Contact Us</h4>
             <ul className="space-y-3 text-sm text-slate-400">
-              <li>📍 Asian Community,Monrovia-Liberia</li>
+              <li>📍 Asian Community, Monrovia, Liberia</li>
               <li>📞 +231-555-743-687</li>
               <li>✉️ drymytearsinternational2@gmail.com</li>
             </ul>
@@ -104,12 +80,12 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-between gap-3 border-t border-slate-800 pt-6 text-sm text-slate-500 sm:flex-row">
           <p>© {currentYear} drymytearsinternational2@gmail.com. All rights reserved.</p>
           <div className="flex flex-wrap items-center gap-3">
-            <a href="#" className="transition hover:text-white">
-              Privacy Policy
-            </a>
+            <Link to="/about" className="transition hover:text-white">
+              About Us
+            </Link>
             <span className="text-slate-700">|</span>
-            <a href="#" className="transition hover:text-white">
-              Terms of Service
+            <a href="mailto:drymytearsinternational2@gmail.com" className="transition hover:text-white">
+              Contact Us
             </a>
           </div>
         </div>
