@@ -50,9 +50,9 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <a href="mailto:drymytearsinternational2@gmail.com" className="transition hover:text-white">
+                <Link to="/contact" className="transition hover:text-white">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -84,9 +84,9 @@ const Footer = () => {
               About Us
             </Link>
             <span className="text-slate-400">|</span>
-            <a href="mailto:drymytearsinternational2@gmail.com" className="transition hover:text-white">
+            <Link to="/contact" className="transition hover:text-white">
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
       </div>

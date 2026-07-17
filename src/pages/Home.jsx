@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import Hero from "../components/Hero";
 import Help from "../components/Help";
@@ -5,6 +6,10 @@ import Programs from "../components/Programs";
 import Testimonials from "../components/Testimonials";
 
 export default function Home() {
+  useEffect(() => {
+    document.title = "Home | Dry My Tears International";
+  }, []);
+
   return (
     <>
       <motion.div initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.45 }}>

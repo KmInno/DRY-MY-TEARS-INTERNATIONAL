@@ -53,3 +53,24 @@ export const testimonials = [
       "It's wonderful seeing the impact of every donation.",
   },
 ];
+
+export const teamMembers = [
+  {
+    name: "Sarah Jenkins",
+    role: "Founder & Executive Director",
+    image: "/images/staf01.webp",
+    bio: "Sarah founded Dry My Tears with a vision to provide every vulnerable child with a loving home and access to quality education.",
+  },
+  {
+    name: "David Kojo",
+    role: "Programs Manager & Volunteer Coordinator",
+    image: "/images/staf02.webp",
+    bio: "David oversees our daily operations and coordinates outreach, ensuring children receive the support they need.",
+  },
+  {
+    name: "Grace Mwangi",
+    role: "Health & Nutrition Lead",
+    image: "/images/staf03.webp",
+    bio: "Grace coordinates healthcare services and nutrition plans for the children, ensuring their physical well-being.",
+  },
+];
