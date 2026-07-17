@@ -1,7 +1,10 @@
-function GalleryCard({ title, caption, image }) {
+function GalleryCard({ title, caption, image, onImageClick }) {
   return (
     <div className="group overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-sm hover:shadow-xl hover:border-slate-200 transition-all duration-300 flex flex-col h-full">
-      <div className="relative overflow-hidden aspect-[4/3]">
+      <div 
+        className="relative overflow-hidden w-full h-72 sm:h-80 md:h-[350px] lg:h-[400px] cursor-pointer"
+        onClick={onImageClick}
+      >
         <img
           src={image}
           alt={title}
