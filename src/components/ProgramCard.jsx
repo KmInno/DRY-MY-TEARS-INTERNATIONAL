@@ -6,16 +6,16 @@ export default function ProgramCard({
   description,
 }) {
   return (
-    <div className="bg-white rounded-3xl p-6 shadow">
-      <div className="bg-amber-100 p-4 rounded-xl w-fit">
-        <Icon className="text-amber-600" />
+    <div className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-primary/10">
+      <div className="w-fit rounded-xl bg-accent/10 p-4">
+        <Icon className="text-accent" />
       </div>
 
-      <h3 className="mt-4 text-xl font-semibold">
+      <h3 className="mt-4 text-xl font-semibold text-primary">
         {title}
       </h3>
 
-      <p className="mt-3 text-gray-600">
+      <p className="mt-3 text-slate-700">
         {description}
       </p>
     </div>
