@@ -56,21 +56,22 @@ export const testimonials = [
 
 export const teamMembers = [
   {
-    name: "Sarah Jenkins",
-    role: "Founder & Executive Director",
+    name: " Mrs.GERALDINE P. WAH",
+    role: "Director",
     image: "/images/staf01.webp",
-    bio: "Sarah founded Dry My Tears with a vision to provide every vulnerable child with a loving home and access to quality education.",
+     bio: "She Provides strategic leadership and overall management of the orphanage by overseeing daily operations, supervising staff, ensuring the welfare and protection of children, managing partnerships with donors and stakeholders, and ensuring compliance with organizational policies and government regulations.",
   },
   {
-    name: "David Kojo",
-    role: "Programs Manager & Volunteer Coordinator",
+    name: "Mrs. ROSE WAH ",
+    role: "Founder",
     image: "/images/staf02.webp",
-    bio: "David oversees our daily operations and coordinates outreach, ensuring children receive the support they need.",
+    bio: "Mrs Rose founded Dry My Tears with a vision to provide every vulnerable child with a loving home and access to quality education.",
+    
   },
   {
-    name: "Grace Mwangi",
-    role: "Health & Nutrition Lead",
+    name: "Mr. MILLER SOWAH BAYE",
+    role: "Accountant Manager",
     image: "/images/staf03.webp",
-    bio: "Grace coordinates healthcare services and nutrition plans for the children, ensuring their physical well-being.",
+    bio: "Prepares and manages the orphanage's annual and monthly budgets by allocating funds to essential operational areas such as food, education, healthcare, staff salaries, and utilities, while monitoring expenditures to ensure financial accountability and efficient use of resources.",
   },
 ];

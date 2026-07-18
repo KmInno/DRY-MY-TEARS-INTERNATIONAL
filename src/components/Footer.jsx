@@ -13,7 +13,7 @@ const Footer = () => {
               Every child deserves a smile, and every tear deserves a reason to dry.
             </p>
             <div className="flex flex-wrap items-center gap-3">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-slate-100 transition hover:bg-white/20">
+              <a href="https://www.facebook.com/share/1YFJTTzi3a/       " target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-slate-100 transition hover:bg-white/20">
                 <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
                   <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879v-6.99h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.99C18.343 21.128 22 16.991 22 12z" />
                 </svg>
@@ -54,6 +54,16 @@ const Footer = () => {
                   Contact
                 </Link>
               </li>
+ <li>
+                <Link to="/volunteer" className="transition hover:text-white">
+                  volunteer
+                </Link>
+              </li>
+ <li>
+                <Link to="/donate" className="transition hover:text-white">
+                  Donate 
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -72,7 +82,7 @@ const Footer = () => {
             <ul className="space-y-3 text-sm text-slate-300">
               <li>📍 Asian Community, Monrovia, Liberia</li>
               <li>📞 +231-555-743-687</li>
-              <li>✉️ drymytearsinternational2@gmail.com</li>
+              <li>✉️ drymytearsinternational23@gmail.com</li>
             </ul>
           </div>
         </div>

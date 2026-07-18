@@ -22,7 +22,7 @@ function About() {
             <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1, duration: 0.45 }} className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
               <h2 className="text-2xl font-semibold text-slate-900">Our Mission</h2>
               <p className="mt-4 text-slate-600 leading-8">
-                We create safe and nurturing environments where children can learn, heal, and build brighter futures with dignity and confidence.
+               "Touch a life.Dry a tear.Inspire a future."
               </p>
             </motion.div>
 
@@ -41,7 +41,7 @@ function About() {
             className="relative h-[450px] overflow-hidden rounded-3xl shadow-md ring-1 ring-slate-200"
           >
             <img
-              src="/images/image06.webp"
+              src="/images/image05.webp"
               alt="Children playing safely"
               className="w-full h-full object-cover"
             />

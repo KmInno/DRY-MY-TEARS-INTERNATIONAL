@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { stats } from "../data/siteData";
 
@@ -40,13 +41,26 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-4 mt-8">
-            <button className="bg-amber-500 hover:bg-amber-600 text-slate-950 px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-amber-500/20 transition-all duration-300">
-              Support a Child
-            </button>
 
-            <button className="border border-white/30 hover:border-white bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-full font-bold transition-all duration-300">
-              Learn More
-            </button>
+
+          
+<Link
+  to="/about"
+  className="bg-amber-500 hover:bg-amber-600 text-slate-950 px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-amber-500/20 transition-all duration-300 inline-block"
+>
+  Support a Child
+</Link>
+<Link
+  to="/contact"
+  className=" border border-white/30 hover:border-white bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-full font-bold transition-all duration-300 "
+>
+  Learn More
+</Link>
+
+
+
+            
+
           </div>
         </motion.div>
 
