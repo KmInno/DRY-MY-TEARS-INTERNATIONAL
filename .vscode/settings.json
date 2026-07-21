@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^corepack enable ; corepack prepare yarn@4\\.5\\.0 --activate ; yarn --version ; yarn install$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
