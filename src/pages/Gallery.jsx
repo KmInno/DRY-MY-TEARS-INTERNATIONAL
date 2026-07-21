@@ -4,7 +4,6 @@ import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import SectionHeading from "../components/SectionHeading";
 import GalleryCard from "../components/GalleryCard";
 
-// Added titles and captions to prevent undefined errors in the lightbox
 const galleryItems = [
   { image: "/images/image01.webp", title: "Morning Care", caption: "Starting the day with smiles." },
   { image: "/images/image02.webp", title: "Classroom", caption: "Learning and growing together." },
@@ -87,6 +86,16 @@ function Gallery() {
     setLightboxIndex((prev) => (prev === galleryItems.length - 1 ? 0 : prev + 1));
   };
 
+  // NEW: Handle touch/mouse swipe gestures
+  const handleDragEnd = (e, { offset, velocity }) => {
+    const swipeThreshold = 50; // minimum pixel movement to trigger a slide
+    if (offset.x < -swipeThreshold) {
+      nextSlide();
+    } else if (offset.x > swipeThreshold) {
+      prevSlide();
+    }
+  };
+
   const translatePercent = -(currentIndex * (100 / visibleCards));
 
   return (
@@ -111,14 +120,18 @@ function Gallery() {
           {/* Carousel Viewport Wrapper */}
           <div className="overflow-hidden px-2 py-6 -mx-2">
             <motion.div
+              drag="x"
+              dragConstraints={{ left: 0, right: 0 }} // Prevents it from getting stuck off-screen
+              dragElastic={0.2} // Adds a nice bouncy resistance when dragging
+              onDragEnd={handleDragEnd}
               animate={{ x: `${translatePercent}%` }}
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
-              className="flex -mx-3"
+              className="flex -mx-3 cursor-grab active:cursor-grabbing"
             >
               {galleryItems.map((item, index) => (
                 <div
                   key={index}
-                  className="w-full md:w-1/2 lg:w-1/3 shrink-0 px-3 flex"
+                  className="w-full md:w-1/2 lg:w-1/3 shrink-0 px-3 flex pointer-events-none sm:pointer-events-auto"
                 >
                   <div className="w-full h-full transform transition-transform duration-300 hover:-translate-y-1">
                     <GalleryCard

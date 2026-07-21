@@ -11,13 +11,17 @@ export default function Hero() {
       transition={{ duration: 0.8 }}
       className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-slate-950 text-white py-20"
     >
-      {/* Background Image with Dark Overlay */}
-      <div className="shadow-lg absolute inset-0 z-0">
-        <img
+      {/* Background Image with Cinematic Slow Zoom */}
+      <div className="absolute inset-0 z-0">
+        <motion.img
+          initial={{ scale: 1 }}
+          animate={{ scale: 1.05 }}
+          transition={{ duration: 20, repeat: Infinity, repeatType: "reverse", ease: "linear" }}
           src="/images/hero_converted_1.webp"
           alt="Dry My Tears children"
-          className="w-full h-full object-cover object-center opacity-45 scale-100 transition-all duration-1000"
+          className="w-full h-full object-cover object-center opacity-45"
         />
+        {/* Gradient Overlay for Text Readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-slate-900/60" />
       </div>
 
@@ -29,9 +33,11 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.15 }}
           className="max-w-3xl"
         >
-          <span className="inline-block px-4 py-1.5 rounded-full bg-accent/25 border border-accent/40 text-rose-400 font-semibold text-sm tracking-wider uppercase mb-6">
+          {/* Eyebrow Badge */}
+          <span className="inline-block px-4 py-1.5 rounded-full bg-rose-500/10 border border-rose-500/20 text-rose-400 font-semibold text-sm tracking-wider uppercase mb-6">
             Dry My Tears International
           </span>
+          
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight text-white">
             Caring for children with <span className="text-amber-400">love</span> and <span className="text-amber-400">dignity</span>.
           </h1>
@@ -40,27 +46,20 @@ export default function Hero() {
             Providing shelter, education, healthcare, and opportunities for vulnerable children to thrive and build bright futures.
           </p>
 
+          {/* Call to Action Buttons */}
           <div className="flex flex-wrap gap-4 mt-8">
-
-
-
             <Link
-              to="/about"
-              className="bg-amber-500 hover:bg-amber-600 text-slate-950 px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-amber-500/20 transition-all duration-300 inline-block"
+              to="/donate"
+              className="bg-amber-500 hover:bg-amber-600 text-slate-950 px-8 py-4 rounded-full font-bold shadow-lg shadow-amber-500/20 hover:shadow-amber-500/40 transition-all duration-300 inline-block active:scale-[0.98]"
             >
               Support a Child
             </Link>
             <Link
-              to="/contact"
-              className=" border border-white/30 hover:border-white bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-full font-bold transition-all duration-300 "
+              to="/about"
+              className="border border-white/30 hover:border-white bg-white/5 hover:bg-white/10 text-white px-8 py-4 rounded-full font-bold transition-all duration-300 backdrop-blur-sm active:scale-[0.98]"
             >
               Learn More
             </Link>
-
-
-
-
-
           </div>
         </motion.div>
 
@@ -74,10 +73,14 @@ export default function Hero() {
           {stats.map((item) => (
             <div
               key={item.label}
-              className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10 hover:border-white/20 hover:bg-white/15 transition-all duration-300 shadow-lg"
+              className="group bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10 hover:border-white/25 hover:bg-white/15 transition-all duration-300 shadow-xl"
             >
-              <span className="block text-3xl font-extrabold text-amber-400">{item.value}</span>
-              <span className="block text-xs uppercase tracking-wider text-slate-200 mt-2 font-medium">{item.label}</span>
+              <span className="block text-3xl font-extrabold text-amber-400 group-hover:scale-105 transform transition-transform duration-300 origin-left">
+                {item.value}
+              </span>
+              <span className="block text-xs uppercase tracking-wider text-slate-300 mt-2 font-medium">
+                {item.label}
+              </span>
             </div>
           ))}
         </motion.div>
