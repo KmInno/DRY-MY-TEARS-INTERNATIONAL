@@ -55,14 +55,21 @@ function Help() {
 
         <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {whatWeDo.map((item, index) => (
-            <motion.div key={item.title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.35, delay: index * 0.05 }} className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+            <motion.div
+              key={item.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.35, delay: index * 0.05 }}
+              className="rounded-3xl bg-white p-6 shadow-lg ring-1 ring-slate-200"
+            >
               <h3 className="text-xl font-semibold text-slate-900">{item.title}</h3>
               <p className="mt-3 text-sm leading-6 text-slate-600">{item.text}</p>
             </motion.div>
           ))}
         </div>
 
-        <div className="mt-16 rounded-[2rem] bg-slate-900 px-8 py-10 text-white shadow-2xl lg:px-12 lg:py-14">
+        <div className="shadow-2xl mt-16 rounded-[2rem] bg-slate-900 px-8 py-10 text-white lg:px-12 lg:py-14">
           <div className="mx-auto max-w-3xl text-center">
             <SectionHeading
               eyebrow="How You Can Help"

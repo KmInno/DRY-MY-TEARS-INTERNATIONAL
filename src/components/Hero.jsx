@@ -12,7 +12,7 @@ export default function Hero() {
       className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-slate-950 text-white py-20"
     >
       {/* Background Image with Dark Overlay */}
-      <div className="absolute inset-0 z-0">
+      <div className="shadow-lg absolute inset-0 z-0">
         <img
           src="/images/hero_converted_1.webp"
           alt="Dry My Tears children"
@@ -43,23 +43,23 @@ export default function Hero() {
           <div className="flex flex-wrap gap-4 mt-8">
 
 
-          
-<Link
-  to="/about"
-  className="bg-amber-500 hover:bg-amber-600 text-slate-950 px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-amber-500/20 transition-all duration-300 inline-block"
->
-  Support a Child
-</Link>
-<Link
-  to="/contact"
-  className=" border border-white/30 hover:border-white bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-full font-bold transition-all duration-300 "
->
-  Learn More
-</Link>
+
+            <Link
+              to="/about"
+              className="bg-amber-500 hover:bg-amber-600 text-slate-950 px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-amber-500/20 transition-all duration-300 inline-block"
+            >
+              Support a Child
+            </Link>
+            <Link
+              to="/contact"
+              className=" border border-white/30 hover:border-white bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-full font-bold transition-all duration-300 "
+            >
+              Learn More
+            </Link>
 
 
 
-            
+
 
           </div>
         </motion.div>
